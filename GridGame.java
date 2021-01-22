@@ -2,7 +2,7 @@
 /**
  * Write a description of class GridGame here.
  *
- * @author (your name)
+ * @author (Joey Dolan)
  * @version (4.2.2)
  */
 
@@ -63,7 +63,7 @@ public class GridGame
         boolean fillASlot = true;
         
         int number = 5;
-        String[] myStringArray = {"0","0","0","0","0"};
+        String[] myStringArray = {("2","4","6","8","12"),("1","2","4","6","16"),("50","35","30","20","10"),("5","4","3","2","10"),("12","24","40","48","60")};
         
         int elementNumber;
         
