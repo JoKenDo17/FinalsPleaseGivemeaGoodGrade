@@ -14,7 +14,7 @@ public class GridGame
         System.out.print('\u000C');
     }
     static String[][] buildBoard() {
-        String[][] board = {{"2","4","6","8","12"}, {"12","24","39","48","60"}, {"1","2","4","6","16"}, {"50","35","30","20","10"}, {"10","5","20","15","40"}, };
+        String[][] board = {("2","4","6","8","12"),("1","2","4","6","16"),("50","35","30","20","10"),("5","4","3","2","10"),("12","24","40","48","60")};
         
         for (int i=0; i < 5; i++) {
             for (int j=0; j<5; j++) {
@@ -43,7 +43,7 @@ public class GridGame
                 iCount = i+1;
                 jCount = j+1;
                 
-                System.out.print("Input the value for the next string in position " + iCount + ", " + jCount + ":");
+                System.out.print("Edit the number for the next string in the position " + iCount + ", " + jCount + ":");
                 board[iCount][jCount] = key.next();
             }
         }
@@ -53,7 +53,7 @@ public class GridGame
     static String[][] changeBoardNumber(String[][] board, int x, int y) {
         Scanner key = new Scanner(System.in);
         
-        System.out.print("State the value for the string that's in positon " + x + " " + y + ":");
+        System.out.print("Say the value for the string that's in positon " + x + " " + y + ":");
         board[x][y] = key.next();
         return board;
     }
@@ -80,7 +80,7 @@ public class GridGame
                 int numberPlusOne = i + 1;
                 System.out.println("The string in position " + numberPlusOne + " is " + myStringArray[i] + ".");
             }
-            System.out.print("Type true if you want to replace one or more elements inside the array.");
+            System.out.print("Type true if you want to replace one or more elements in the array.");
             fillASlot = myScanner.nextBoolean();
             
             while (fillASlot) {
